@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftUIX - 关于我们</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <style>
+        /* 定义柔和的深蓝色主题 */
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #004c99;
+            --text-color: #333;
+            --light-text-color: #fff;
+            --background-color: #f4f4f9;
+        }
+
+        /* 应用主题颜色 */
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: sans-serif;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+        }
+
+        nav a {
+            color: var(--light-text-color);
+        }
+
+        nav a:hover {
+            color: #e0e0e0;
+        }
+
+        section.bg-cover {
+            background-color: var(--secondary-color);
+            background-blend-mode: multiply;
+        }
+
+        section.bg-cover h1,
+        section.bg-cover p {
+            color: var(--light-text-color);
+        }
+
+        section.bg-cover a {
+            background-color: var(--light-text-color);
+            color: var(--primary-color);
+        }
+
+        section.bg-cover a:hover {
+            background-color: #e0e0e0;
+        }
+
+        section.container .bg-white {
+            background-color: #fff;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        section.container .text-blue-600 {
+            color: var(--primary-color);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--light-text-color);
+        }
+
+        footer a {
+            color: var(--light-text-color);
+        }
+
+        footer a:hover {
+            color: #e0e0e0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">SwiftUIX</a>
+            <div class="space-x-4">
+                <a href="index.html" class="hover:text-gray-200">首页</a>
+                <a href="about.html" class="hover:text-gray-200">关于我们</a>
+                <a href="contact.html" class="hover:text-gray-200">联系我们</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 关于我们内容 -->
+    <section class="container mx-auto py-16">
+        <h1 class="text-4xl font-bold mb-4">关于我们</h1>
+        <p class="text-gray-600">我们是一个专注于提供优质服务的团队，致力于为用户带来更好的体验。</p>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 SwiftUIX. 保留所有权利.</p>
+            <div class="space-x-4 mt-4">
+                <a href="#" class="hover:text-gray-400"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-gray-400"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="hover:text-gray-400"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

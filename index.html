@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎来到我的网站</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <style>
+        /* 定义柔和的深蓝色主题 */
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #004c99;
+            --text-color: #333;
+            --light-text-color: #fff;
+            --background-color: #f4f4f9;
+        }
+
+        /* 应用主题颜色 */
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: sans-serif;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+        }
+
+        nav a {
+            color: var(--light-text-color);
+        }
+
+        nav a:hover {
+            color: #e0e0e0;
+        }
+
+        section.bg-cover {
+            background-color: var(--secondary-color);
+            background-blend-mode: multiply;
+        }
+
+        section.bg-cover h1,
+        section.bg-cover p {
+            color: var(--light-text-color);
+        }
+
+        section.bg-cover a {
+            background-color: var(--light-text-color);
+            color: var(--primary-color);
+        }
+
+        section.bg-cover a:hover {
+            background-color: #e0e0e0;
+        }
+
+        section.container .bg-white {
+            background-color: #fff;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        section.container .text-blue-600 {
+            color: var(--primary-color);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--light-text-color);
+        }
+
+        footer a {
+            color: var(--light-text-color);
+        }
+
+        footer a:hover {
+            color: #e0e0e0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold">我的网站</a>
+            <div class="space-x-4">
+                <a href="#" class="hover:text-gray-200">首页</a>
+                <a href="#" class="hover:text-gray-200">关于我们</a>
+                <a href="#" class="hover:text-gray-200">联系我们</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section class="bg-cover bg-center py-24" style="background-image: url('https://picsum.photos/1920/1080');">
+        <div class="container mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-4">欢迎来到我的网站</h1>
+            <p class="text-xl mb-8">在这里，你可以发现更多精彩内容。</p>
+            <a href="#"
+                class="py-3 px-6 rounded-full hover:bg-gray-200 transition duration-300">了解更多</a>
+        </div>
+    </section>
+
+    <!-- 特色区域 -->
+    <section class="container mx-auto py-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-6 rounded-lg text-center">
+                <i class="fa-solid fa-rocket text-4xl mb-4"></i>
+                <h2 class="text-2xl font-bold mb-2">快速加载</h2>
+                <p class="text-gray-600">我们的网站加载速度极快，让你无需等待。</p>
+            </div>
+            <div class="p-6 rounded-lg text-center">
+                <i class="fa-solid fa-shield text-4xl mb-4"></i>
+                <h2 class="text-2xl font-bold mb-2">安全可靠</h2>
+                <p class="text-gray-600">采用先进的安全技术，保障你的信息安全。</p>
+            </div>
+            <div class="p-6 rounded-lg text-center">
+                <i class="fa-solid fa-headset text-4xl mb-4"></i>
+                <h2 class="text-2xl font-bold mb-2">优质服务</h2>
+                <p class="text-gray-600">我们提供24/7的优质服务，随时为你解决问题。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 我的网站. 保留所有权利.</p>
+            <div class="space-x-4 mt-4">
+                <a href="#" class="hover:text-gray-400"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-gray-400"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="hover:text-gray-400"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
